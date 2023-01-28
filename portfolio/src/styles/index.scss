@@ -1,0 +1,19 @@
+@import './variables.scss';
+:root {
+  @import url(https://fonts.googleapis.com/css?family=Libre+Bodoni:regular,500,600,700,italic,500italic,600italic,700italic);
+  font-family: 'Libre Bodoni', serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  background-color: $BgColor;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+html {
+  // background-image: url(../assets/BG.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

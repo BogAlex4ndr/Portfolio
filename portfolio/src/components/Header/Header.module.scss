@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+  font-style: bold;
+  ul {
+    display: flex;
+    gap: 10px;
+  }
+  .contacts {
+    color: #ed5d13 !important;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.alex {
+  color: $firstAccentColor !important;
+}
