@@ -12,30 +12,35 @@ const Header = () => {
         <h2 className={styles.alex}>AB.</h2>
       </Link>
       <nav className={styles.navbar}>
-        <Link to='/About'>About</Link>
-        <Link to='/projects'>Projects</Link>
-        <Link to='/Resume'>Resume</Link>
+        <Link to='/About'>
+          <span className={styles.menuLink}>About</span>
+        </Link>
+        <Link to='/projects'>
+          <span className={styles.menuLink}>Projects</span>
+        </Link>
+        <Link to='/Resume'>
+          <span className={styles.menuLink}>Resume</span>
+        </Link>
       </nav>
-      <ul>
+      <ul className={styles.contactsWrapper}>
         <li>
           <Link to='https://www.linkedin.com/in/alexandr-bohar-33045b182/'>
-            <span className={styles.contacts}>
-              <BsLinkedin />
+            <span>
+              <BsLinkedin className={styles.contacts} />
             </span>
           </Link>
         </li>
         <li>
           <Link to='https://github.com/BogAlex4ndr'>
-            <span className={styles.contacts}>
-              {' '}
-              <BsGithub />
+            <span>
+              <BsGithub className={styles.contactsCircle} />
             </span>
           </Link>
         </li>
         <li>
           <Link to='https://t.me/ALEX_B0G'>
-            <span className={styles.contacts}>
-              <BsTelegram />
+            <span>
+              <BsTelegram className={styles.contactsCircle} />
             </span>
           </Link>
         </li>

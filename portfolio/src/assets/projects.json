@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "img": "src/assets/guitarShop.png",
+    "title": "Guitar shop",
+    "text": "Simle page using html/css",
+    "demoLink": "https://bogalex4ndr.github.io/Guitar-shop-html-css/",
+    "githubLink": "https://github.com/BogAlex4ndr/Guitar-shop-html-css"
+  },
+  {
+    "id": 2,
+    "img": "src/assets/tetris.png",
+    "title": "Tetris",
+    "text": "Tetris game using JS/HTML/CSS",
+    "demoLink": "https://bogalex4ndr.github.io/Guitar-shop-html-css/",
+    "githubLink": "https://github.com/BogAlex4ndr/Guitar-shop-html-css"
+  },
+  {
+    "id": 3,
+    "img": "src/assets/olivio.png",
+    "title": "Allivio",
+    "text": "simpe page using html scss",
+    "demoLink": "https://bogalex4ndr.github.io/Guitar-shop-html-css/",
+    "githubLink": "https://github.com/BogAlex4ndr/Guitar-shop-html-css"
+  },
+  {
+    "id": 4,
+    "img": "src/assets/guitarShop.png",
+    "title": "Pizza",
+    "text": "some text",
+    "demoLink": "https://bogalex4ndr.github.io/Guitar-shop-html-css/",
+    "githubLink": "https://github.com/BogAlex4ndr/Guitar-shop-html-css"
+  }
+]

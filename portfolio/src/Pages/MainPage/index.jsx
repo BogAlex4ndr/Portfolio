@@ -6,8 +6,7 @@ const MainPage = () => {
     <div className={styles.main}>
       <div>
         <div className={styles.text}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum earum voluptates fugiat
-          voluptatem sapiente commodi ipsam ex animi reprehenderit.
+          Hi, I am Alexandr Bohar, self-tought Front-end developer
         </div>
         </div>
     </div>
