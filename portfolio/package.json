@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,10 +13,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-particles": "^2.8.0",
     "react-pdf": "^6.2.2",
     "react-router": "^6.8.0",
     "react-router-dom": "^6.8.0",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "tsparticles": "^2.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

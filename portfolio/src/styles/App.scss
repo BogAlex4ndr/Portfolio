@@ -9,6 +9,8 @@
 }
 .App {
   margin: 0 auto;
+  
+
 
   img {
     max-width: 100%;
@@ -17,10 +19,24 @@
 
   @media (prefers-reduced-motion: reduce) {
     * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+      // animation-duration: 0.01ms !important;
+      // animation-iteration-count: 1 !important;
+      // transition-duration: 0.01ms !important;
+      // scroll-behavior: auto !important;
     }
   }
+  .background__live {
+    z-index: -5;
+  }
+}
+
+.app__wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main__content {
+  margin: 0 auto;
+  max-width: 1440px;
+  flex: 1 1 auto;
 }

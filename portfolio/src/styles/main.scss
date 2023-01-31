@@ -1,19 +1,39 @@
 @import './variables.scss';
 :root {
-  @import url(https://fonts.googleapis.com/css?family=Libre+Bodoni:regular,500,600,700,italic,500italic,600italic,700italic);
-  font-family: 'Libre Bodoni', serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   background-color: $BgColor;
-  max-width: 1400px;
-  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #201533;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(92, 62, 175, 0.959);
+  border-radius: 12px;
+  &:hover {
+    background: rgba(59, 53, 138, 0.911);
+    border-radius: 12px;
+  }
 }
 
 html {
-  //  background-image: $bgImage;
+  background-image: $bgImage;
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-attachment: fixed;
+  // background-position: 0 0;
   background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
 }

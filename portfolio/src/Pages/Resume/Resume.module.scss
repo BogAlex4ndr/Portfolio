@@ -8,8 +8,16 @@
   gap: 20px;
 }
 .resume {
+  z-index: 10;
   display: flex;
   justify-content: center;
+  img {
+    min-width: 320px;
+    min-height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  
 }
 
 .button {
@@ -20,9 +28,9 @@
   background-color: $firstAccentColor;
   border: 1px solid $firstAccentColor;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
   &:hover {
     box-shadow: 0px 0px 10px $secondAccentColor;
-    transition: all ease-in-out;
     transform: scale(1.1);
     cursor: pointer;
 

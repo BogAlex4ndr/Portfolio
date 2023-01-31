@@ -1,11 +1,19 @@
 @import '../../styles/variables.scss';
+.header {
+  width: 100%;
+  background-color: $BgOpacityColor;
+}
 .wrapper {
+  max-width: 1370px;
+  margin: 0 auto;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-style: bold;
   flex-wrap: wrap;
+
   .contactsWrapper {
     display: flex;
     align-items: center;
@@ -29,7 +37,6 @@
 }
 
 .navbar {
-  padding-left: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,10 +45,16 @@
 
 .alex {
   color: $firstAccentColor !important;
-
+  display: flex;
+  align-items: center;
   &:hover {
     text-shadow: 0px 0px 10px $secondAccentColor;
+    // box-shadow: 0px 0px 10px $secondAccentColor;
   }
+}
+.logo {
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .menuLink {
@@ -66,4 +79,10 @@
     width: 100%;
     box-shadow: 1px 1px 5px black;
   }
+}
+
+.LeftSideHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
