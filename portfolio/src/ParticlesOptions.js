@@ -17,7 +17,7 @@ const options = {
       value: 0.2,
     },
     size: {
-      value: { min: 1, max: 7 },
+      value: { min: 2, max: 7 },
     },
     links: {
       enable: false,

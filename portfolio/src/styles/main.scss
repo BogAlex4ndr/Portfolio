@@ -7,6 +7,10 @@
   background-color: $BgColor;
 }
 
+ul {
+  padding-left: 0px;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -32,6 +36,7 @@ html {
   // background-position: 0 0;
   background-size: 100% 100%;
   background-attachment: fixed;
+  
 }
 
 body {

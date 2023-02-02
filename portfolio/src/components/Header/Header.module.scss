@@ -2,6 +2,10 @@
 .header {
   width: 100%;
   background-color: $BgOpacityColor;
+  backdrop-filter: blur(8px);
+  position: fixed !important;
+  top: 0;
+  z-index: 50;
 }
 .wrapper {
   max-width: 1370px;
@@ -85,4 +89,49 @@
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  .menuButton {
+    display: block;
+  }
+  .LeftSideHeader {
+    padding-top: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: $BgColor;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .wrapper {
+    justify-content: space-around;
+    background-color: $BgColor;
+  }
+}
+
+.showHide {
+  width: 36px;
+  height: 36px;
+  &:hover {
+    text-shadow: 0px 0px 10px $secondAccentColor;
+  }
 }
