@@ -8,21 +8,14 @@ import { RiMenu5Fill, RiCloseLine } from 'react-icons/ri';
 import { useEffect } from 'react';
 
 const Header = () => {
-  const [showHeader, setShowHeader] = useState(false);
-  const [isClicked, setClicked] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 768) {
-      setShowHeader(true);
-    } else {
-      setShowHeader(false);
-    }
-  }, []);
+  const [showHeader, setShowHeader] = useState(window.innerWidth < 768 ? false : true);
+  const [isClicked, setClicked] = useState(window.innerWidth < 768 ? false : true);
 
   const handleClick = () => {
-    setShowHeader(!showHeader);
+    window.innerWidth < 768 ? setShowHeader(!showHeader) : showHeader;
     setClicked(!isClicked);
   };
+
   return (
     <div className={styles.header}>
       <div className={styles.wrapper}>
@@ -35,30 +28,26 @@ const Header = () => {
         <div className={styles.menuButton} onClick={handleClick}>
           <span>
             {isClicked ? (
-              <RiCloseLine className={styles.showHide} />
+              <RiCloseLine className={styles.MobileMenuIcon} />
             ) : (
-              <RiMenu5Fill className={styles.showHide} />
+              <RiMenu5Fill className={styles.MobileMenuIcon} />
             )}
           </span>
         </div>
         <div className={styles.LeftSideHeader} style={{ display: showHeader ? 'flex' : 'none' }}>
           <nav className={styles.navbar}>
             <Link to='/About'>
-              <span className={styles.menuLink} onClick={window.innerWidth < 768 ? handleClick : ''}>
+              <span className={styles.menuLink} onClick={handleClick}>
                 About
               </span>
             </Link>
             <Link to='/projects'>
-              <span
-                className={styles.menuLink}
-                onClick={window.innerWidth < 768 ? handleClick : ''}>
+              <span className={styles.menuLink} onClick={handleClick}>
                 Projects
               </span>
             </Link>
             <Link to='/Resume'>
-              <span
-                className={styles.menuLink}
-                onClick={window.innerWidth < 768 ? handleClick : ''}>
+              <span className={styles.menuLink} onClick={handleClick}>
                 Resume
               </span>
             </Link>

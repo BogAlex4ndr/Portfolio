@@ -6,9 +6,11 @@
   list-style: none;
   text-decoration: none;
   color: $textColor;
+  
 }
 .App {
   margin: 0 auto;
+  scroll-behavior: smooth;
   
 
 
@@ -17,14 +19,7 @@
     display: block;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      // animation-duration: 0.01ms !important;
-      // animation-iteration-count: 1 !important;
-      // transition-duration: 0.01ms !important;
-      // scroll-behavior: auto !important;
-    }
-  }
+
   .background__live {
     z-index: -5;
   }
@@ -36,7 +31,7 @@
   flex-direction: column;
 }
 .main__content {
-  margin: 200px auto;
+  margin: 100px auto;
   max-width: 1440px;
   flex: 1 1 auto;
 }

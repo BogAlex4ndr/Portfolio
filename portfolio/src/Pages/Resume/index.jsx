@@ -8,16 +8,20 @@ let cv = 'https://drive.google.com/file/d/1LYcc9eR9hGvDXX3j5OjcTH3EptVVRX07/view
 
 const Resume = () => {
   return (
-    <div className={styles.wrapper}>
-      <div>
-        <Link to={cv}>
-          <button className={styles.button}>DOWNLOAD</button>
-        </Link>
+   <>
+      <div className={styles.wrapper}>
+        <div>
+        <h1>
+            <Link to={cv}>
+              <button className={styles.button}>DOWNLOAD</button>
+            </Link>
+        </h1>
+        </div>
+        <div className={styles.resume}>
+          <img src={resume} />
+        </div>
       </div>
-      <div className={styles.resume}>
-        <img src={resume} />
-      </div>
-    </div>
+   </>
   );
 };
 

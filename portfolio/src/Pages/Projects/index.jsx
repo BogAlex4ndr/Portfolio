@@ -16,13 +16,15 @@ const Projects = () => {
   }, []);
 
   return (
-  <div>
-    <h1 className={styles.mainTitle}>There's my <span>Pet Projects</span></h1>
-      <div className={styles.wrapper}>
-        {isLoading ? 'Loading...' : items.map((obj) => <ProjectConteiner key={obj.id} {...obj} />)}
-  
-      </div>
-  </div>
+<>
+    <div>
+      <div className={styles.mainTitle}><h1>There's my <span>Pet Projects</span></h1></div>
+        <div className={styles.wrapper}>
+          {isLoading ? 'Loading...' : items.map((obj) => <ProjectConteiner key={obj.id} {...obj} />)}
+    
+        </div>
+    </div>
+</>
   );
 };
 
