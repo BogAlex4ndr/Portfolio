@@ -14,7 +14,7 @@ const options = {
       type: 'circle',
     },
     opacity: {
-      value: 0.2,
+      value: 0.3,
     },
     size: {
       value: { min: 2, max: 7 },

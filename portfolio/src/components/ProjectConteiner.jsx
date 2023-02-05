@@ -9,12 +9,14 @@ const ProjectConteiner = (props) => {
         <img src={props.img} />
       </div>
       <h2 className={styles.title}>{props.title}</h2>
-      <p className={styles.text}>{props.text}</p>
+      <div className={styles.text}>
+        <p>{props.text}</p>
+      </div>
       <div className={styles.buttonsConteiner}>
-        <Link to={props.demoLink}>
+        <Link to={props.demoLink} target='_blank'>
           <button className={styles.button}>Demo</button>
         </Link>
-        <Link to={props.githubLink}>
+        <Link to={props.githubLink} target='_blank'>
           <button className={styles.button}>GitHub</button>
         </Link>
       </div>

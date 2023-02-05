@@ -6,22 +6,20 @@
   list-style: none;
   text-decoration: none;
   color: $textColor;
-  
+  line-height: 150%;
 }
 .App {
   margin: 0 auto;
-  scroll-behavior: smooth;
-  
-
 
   img {
     max-width: 100%;
     display: block;
   }
 
-
   .background__live {
     z-index: -5;
+    background-attachment: fixed;
+    background-position: center center;
   }
 }
 
@@ -34,4 +32,16 @@
   margin: 100px auto;
   max-width: 1440px;
   flex: 1 1 auto;
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  max-width: 440px;
+  min-width: 300px;
+  height: 520px;
+  box-shadow: 0px 0px 5px $firstAccentColor;
+  border-radius: 20px 20px 5px 5px;
+  background: $BgOpacityColor;
 }

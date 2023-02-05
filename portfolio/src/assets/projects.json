@@ -12,16 +12,16 @@
     "img": "src/assets/olivio.png",
     "title": "Allivio",
     "text": "simpe page using html scss",
-    "demoLink": "https://bogalex4ndr.github.io/Guitar-shop-html-css/",
-    "githubLink": "https://github.com/BogAlex4ndr/Guitar-shop-html-css"
+    "demoLink": "https://bogalex4ndr.github.io/Olivio/",
+    "githubLink": "https://github.com/BogAlex4ndr/Olivio"
   },
   {
     "id": 3,
-    "img": "src/assets/tetris.png",
+    "img": "src/assets/TetrisImg.png",
     "title": "Tetris",
     "text": "Tetris game using JS/HTML/CSS",
-    "demoLink": "https://bogalex4ndr.github.io/Guitar-shop-html-css/",
-    "githubLink": "https://github.com/BogAlex4ndr/Guitar-shop-html-css"
+    "demoLink": "https://bogalex4ndr.github.io/Tetris/",
+    "githubLink": "https://github.com/BogAlex4ndr/Tetris"
   },
 
   {

@@ -2,9 +2,11 @@
 :root {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 600;
-  background-color: $BgColor;
+}
+
+h1, h2, p {
+  text-shadow: 3px 4px 2px rgb(10, 0, 50);
 }
 
 ul {
@@ -29,14 +31,15 @@ ul {
 }
 
 html {
-  background-image: $bgImage;
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-position: 0 0;
-  background-attachment: fixed;
-  
 }
 
 body {
   margin: 0;
+  background: rgb(20, 25, 56);
+  background: $Gradient;
+  // background-image: $bgImage;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed !important;
 }

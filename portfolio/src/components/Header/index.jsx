@@ -54,21 +54,21 @@ const Header = () => {
           </nav>
           <ul className={styles.contactsWrapper}>
             <li>
-              <Link to='https://www.linkedin.com/in/alexandr-bohar-33045b182/'>
+              <Link to='https://www.linkedin.com/in/alexandr-bohar-33045b182/' target='_blank'>
                 <span>
                   <BsLinkedin className={styles.contacts} />
                 </span>
               </Link>
             </li>
             <li>
-              <Link to='https://github.com/BogAlex4ndr'>
+              <Link to='https://github.com/BogAlex4ndr' target='_blank'>
                 <span>
                   <BsGithub className={styles.contactsCircle} />
                 </span>
               </Link>
             </li>
             <li>
-              <Link to='https://t.me/ALEX_B0G'>
+              <Link to='https://t.me/ALEX_B0G' target='_blank'>
                 <span>
                   <BsTelegram className={styles.contactsCircle} />
                 </span>
