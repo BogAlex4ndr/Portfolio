@@ -17,10 +17,11 @@ const About = () => {
             Get to <span>know me</span>
           </h1>
           <p>
-            I'm a self-tought Frontend Web Developer building the Front-end of Websites and Web
-            Applications. Check out some of my work in the Projects section. I don't have work
-            expirience yet, but I redy to work. Feel free to Connect or Follow me on my Linkedin.
-            I'm open to Job opportunities where I can contribute, learn and grow. If you have a good
+            I'm a Frontend Web Developer building the Front-end of Websites and Web Applications.
+            Check out some of my work in the Projects section. I don't have work expirience yet, but
+            I redy to work. Feel free to Connect or Follow me on my Linkedin.
+            <br />
+              I'm open to Job opportunities where I can contribute, learn and grow. If you have a good
             opportunity that matches my skills then don't hesitate to contact me.
           </p>
         </div>
@@ -47,6 +48,9 @@ const About = () => {
             <RiReactjsLine className={styles.technologyItem} />
           </div>
           <div className={styles.itemConteiner}>
+            <SiRedux className={styles.technologyItem} />
+          </div>
+          <div className={styles.itemConteiner}>
             <IoLogoNodejs className={styles.technologyItem} />
           </div>
           <div className={styles.itemConteiner}>
@@ -55,9 +59,7 @@ const About = () => {
           <div className={styles.itemConteiner}>
             <DiGit className={styles.technologyItem} />
           </div>
-          <div className={styles.itemConteiner}>
-            <SiRedux className={styles.technologyItem} />
-          </div>
+        
         </div>
         <div className={styles.softSkills}></div>
       </div>

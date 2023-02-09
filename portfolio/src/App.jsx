@@ -22,16 +22,16 @@ const App = () => {
       <div className='app__wrapper'>
         <Header />
         <Particles className='background__live' options={options} init={particlesInit} />
-       <div className='main__content'>
+        <div className='main__content'>
           <Routes>
             <Route path='/' element={<MainPage />} />
-            <Route path='/Resume' element={<Resume />} />
             <Route path='/About' element={<About />} />
+            <Route path='/Resume' element={<Resume />} />
             <Route path='/Projects' element={<Projects />} />
           </Routes>
-       </div>
-       <CatWriter/>
-        <Footer/>
+        </div>
+        <CatWriter />
+        <Footer />
       </div>
     </div>
   );

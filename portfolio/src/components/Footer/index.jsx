@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={styles.wrapper}>
       <div className={styles.conteiner}>
-        <div>Designed and developed by Alexandr Bohar</div>
+        <div>Designed & developed by Alexandr Bohar</div>
         <ul className={styles.contactsWrapper}>
           <li>
             <Link to='https://www.linkedin.com/in/alexandr-bohar-33045b182/' target='_blank'>
