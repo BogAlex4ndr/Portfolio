@@ -29,7 +29,7 @@
   border-radius: 20px 20px 5px 5px;
   background: $BgOpacityColor;
   background-size: cover;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-out;
 
   &:hover {
     box-shadow: 0px 0px 10px $secondAccentColor;
@@ -43,7 +43,7 @@
 .image {
   display: flex;
   justify-content: center;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-out;
   img {
     padding: 20px;
     width: 200px;
@@ -82,7 +82,7 @@
   background-color: $firstAccentColor;
   border: 1px solid $firstAccentColor;
   border-radius: 10px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-out;
   &:hover {
     box-shadow: 0px 0px 10px $secondAccentColor;
     transform: scale(1.1);

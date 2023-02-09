@@ -1,23 +1,25 @@
+const screenWidth = window.innerWidth;
+
 const options = {
   particles: {
     number: {
-      value: 80,
+      value: 50,
       density: {
         enable: true,
-        area: 800,
+        area: screenWidth,
       },
     },
     color: {
-      value: ['#31785b', '#0b264b', '#ce443e', '#65a8d8'],
+      value: ['#c4d109be'],
     },
     shape: {
       type: 'circle',
     },
     opacity: {
-      value: 0.3,
+      value: 0.5,
     },
     size: {
-      value: { min: 2, max: 7 },
+      value: { min: 1, max: 3 },
     },
     links: {
       enable: false,
@@ -35,7 +37,7 @@ const options = {
       outModes: 'out',
     },
   },
-  fpsLimit: 120,
+  fpsLimit: 60,
   interactivity: {
     events: {
       onHover: {

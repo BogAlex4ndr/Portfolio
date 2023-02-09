@@ -3,6 +3,7 @@ import styles from './Projects.module.scss';
 import ProjectConteiner from '../../components/ProjectConteiner';
 import axios from 'axios';
 import Skeleton from '../../components/Skeleton';
+import CatWriter from '../../components/CatWriter';
 
 const Projects = () => {
   const [items, setItems] = useState([]);
@@ -14,7 +15,7 @@ const Projects = () => {
   useEffect(() => {
     window.onbeforeunload();
     setIsLoading(true);
-    axios.get('../src/assets/projects.json').then((response) => {
+    axios.get('https://63e0252459bccf35dabf8fc3.mockapi.io/portfolioBlock').then((response) => {
       setItems(response.data);
       setIsLoading(false);
     });
@@ -22,7 +23,6 @@ const Projects = () => {
 
   return (
     <>
-      <div>
         <div className={styles.mainTitle}>
           <h1>
             There's my <span>Pet Projects</span>
@@ -33,7 +33,7 @@ const Projects = () => {
             ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)
             : items.map((obj) => <ProjectConteiner key={obj.id} {...obj} />)}
         </div>
-      </div>
+        <CatWriter/>
     </>
   );
 };

@@ -1,12 +1,36 @@
 @import '../../styles/variables.scss';
 .wrapper {
   background: $BgOpacityColor;
+  z-index: 50;
 }
 
 .conteiner {
-  height: 50px;
+  font-weight: 500;
+  max-height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+.contactsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contacts {
+  background-color: transparent;
+  &:hover {
+    transform: scale(105%);
+  }
+}
+.contactsCircle {
+  background-color: transparent;
+  &:hover {
+    border-radius: 15px;
+    transform: scale(105%);
+    
+  }
+}
+
+

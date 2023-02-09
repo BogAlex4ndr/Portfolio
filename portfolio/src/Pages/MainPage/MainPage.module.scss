@@ -3,43 +3,85 @@
 .main {
 }
 .wrapper {
-  max-width: 1400px;
   h1 {
-  
-  }
-  .coloredText {
-    &:first-child {
-      color: yellow;
+    padding-top: 120px;
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+      color: $firstAccentColor;
     }
-    color: blue;
+    @media (max-width: 767px) {
+      font-size: 3em;
+      padding-top: 20px;
+    }
   }
-}
-.mainText {
-font-size: 22px;
-font-weight: 500;
 }
 
+.BigImage {
+  position: absolute;
+  z-index: -10;
+  bottom: 0px;
+  right: 0;
+
+  img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
 .catBlock {
   display: flex;
   align-items: flex-start;
   position: fixed;
-  bottom: 40px;
+  bottom: 70px;
   left: 20px;
   max-width: 320px;
   height: 100px;
-  z-index: -2;
+  z-index: 0;
   gap: 20px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(42, 4, 78, 0.993);
+    rotate: 24deg;
+    top: 60px;
+    left: -10px;
+    width: 110px;
+    height: 30px;
+    border-radius: 50px 0px 50px 0px;
+    border-right: 5px solid $firstAccentColor;
+    border-bottom: 5px solid $firstAccentColor;
+    border-left: 5px solid $firstAccentColor;
+    right: 30px;
+    box-shadow: 3px 3px 5px black;
+  }
 
   img {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
     width: 100px;
     height: 100px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      text-shadow: 5px 5px 5px black;
+    }
   }
   h4 {
+    font-size: 16px;
     font-weight: 500;
     text-shadow: 2px 2px 0px rgb(10, 0, 50);
     &:first-letter {
       color: rgb(255, 187, 0);
     }
   }
+}
 
+.mainText {
+  font-size: 150%;
+  font-weight: 500;
 }

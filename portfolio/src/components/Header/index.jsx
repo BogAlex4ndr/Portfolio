@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.wrapper}>
         <Link to='/'>
           <div className={styles.alex}>
@@ -77,7 +77,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

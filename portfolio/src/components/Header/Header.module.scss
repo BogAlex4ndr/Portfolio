@@ -77,7 +77,7 @@
     bottom: 1px;
     left: 0;
     z-index: -1;
-    transition: all 0.3s ease-out 0s;
+    transition: all 0.2s ease-out;
   }
   &:hover::after {
     width: 100%;
@@ -101,6 +101,8 @@
     top: 0;
     width: 100%;
     z-index: 999;
+    background-color: $BgOpacityColor;
+    backdrop-filter: blur(8px);
   }
   .menuButton {
     display: block;
@@ -115,8 +117,8 @@
     top: 60px;
     left: 0;
     right: 0;
-    background-color: $BgColor;
-    backdrop-filter: blur(20px);
+    background-color: #02041dee;
+    backdrop-filter: blur(8px);
     overflow: hidden;
   }
   .navbar {
@@ -124,7 +126,6 @@
   }
   .wrapper {
     justify-content: space-around;
-    background-color: $BgColor;
   }
 }
 

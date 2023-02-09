@@ -1,31 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './MainPage.module.scss';
 import Typewriter from 'typewriter-effect';
 import CatGif from '../../assets/catGif.gif';
+import Quotes from '../../components/Quotes';
+import ProgrammerImage from '../../assets/racoon.png';
+import CatWriter from '../../components/CatWriter';
 
 const MainPage = () => {
   return (
     <>
       <div className={styles.main}>
-          <div className={styles.wrapper}>
-            <h1>Hi, I am Alexandr Bohar, self-tought Front-end developer</h1>
-            <p className={styles.mainText}>I am 28 years old, from Odessa <span className={styles.coloredText}>UA</span></p>
-            <div className={styles.catBlock}>
-              <img src={CatGif} alt='' />
-              <h4>
-                <Typewriter
-                  options={{
-                    strings: [`- I love code`, '- I love Knock things over and over again', '- I love sleep till noon'],
-                    autoStart: true,
-                    loop: true,
-                    deleteSpeed: 50,
-                    delay: 50,
-                    skipAddStyles: true,
-                  }}
-                />
-              </h4>
-            </div>
+        <div className={styles.wrapper}>
+          <h1>
+            Hey, I'm <span>Alexander Bohar</span>
+            <br /> Front-end developer
+          </h1>
+
+          <p className={styles.mainText}>
+            
+          </p>
+          {/* <div className={styles.BigImage}>
+            <img src={ProgrammerImage} alt='' />
+          </div> */}
         </div>
+        <CatWriter />
       </div>
     </>
   );
