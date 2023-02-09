@@ -6,14 +6,14 @@ import Quotes from './Quotes';
 
 // styles placed in '../Pages/MainPage/MainPage.module.scss'
 const CatWriter = () => {
-  const [catSay, setCaySay] = useState('OneClick to get wise quote. Double to get menu.');
   const randomPhrase = Quotes[Math.floor(Math.random() * Quotes.length)];
+  const [catSay, setCaySay] = useState('Let me tell you something');
 
   const handleClickCat = () => {
     setCaySay(randomPhrase);
   };
   const handleDoubleClickCat = () => {
-    setCaySay('how can I help you?');
+    setCaySay(`Easy, easy, I can't type so fast by my paws)`);
   };
   return (
     <div className={styles.catBlock}>
@@ -21,7 +21,7 @@ const CatWriter = () => {
         onClick={handleClickCat}
         onDoubleClick={handleDoubleClickCat}
         src={CatGif}
-        alt='where the cat?'
+        alt='where the cat? kis... kis..'
       />
       <h4>
         <Typewriter

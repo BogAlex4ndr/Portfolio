@@ -13,7 +13,9 @@ const About = () => {
     <>
       <div className={styles.wrapper}>
         <div className={styles.infoText}>
-          <h1>Get to <span>know me</span></h1>
+          <h1>
+            Get to <span>know me</span>
+          </h1>
           <p>
             I'm a self-tought Frontend Web Developer building the Front-end of Websites and Web
             Applications. Check out some of my work in the Projects section. I don't have work
@@ -58,7 +60,6 @@ const About = () => {
           </div>
         </div>
         <div className={styles.softSkills}></div>
-        <CatWriter />
       </div>
     </>
   );

@@ -33,7 +33,7 @@ const Projects = () => {
             ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)
             : items.map((obj) => <ProjectConteiner key={obj.id} {...obj} />)}
         </div>
-        <CatWriter/>
+    
     </>
   );
 };

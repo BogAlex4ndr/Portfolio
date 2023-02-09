@@ -12,17 +12,20 @@ const Resume = () => {
     <>
       <div className={styles.wrapper}>
         <div>
-          <h1>
             <Link to={cv} target='_blank'>
               <button className={styles.button}>DOWNLOAD</button>
             </Link>
-          </h1>
         </div>
         <div className={styles.resume}>
           <img src={resume} />
         </div>
+        <div>
+            <Link to={cv} target='_blank'>
+              <button className={styles.button}>DOWNLOAD</button>
+            </Link>
+        </div>
       </div>
-      <CatWriter/>
+      
     </>
   );
 };

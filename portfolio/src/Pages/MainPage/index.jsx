@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import styles from './MainPage.module.scss';
-import Typewriter from 'typewriter-effect';
-import CatGif from '../../assets/catGif.gif';
-import Quotes from '../../components/Quotes';
-import ProgrammerImage from '../../assets/racoon.png';
 import CatWriter from '../../components/CatWriter';
 
 const MainPage = () => {
@@ -23,7 +19,7 @@ const MainPage = () => {
             <img src={ProgrammerImage} alt='' />
           </div> */}
         </div>
-        <CatWriter />
+  
       </div>
     </>
   );

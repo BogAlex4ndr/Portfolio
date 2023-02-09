@@ -11,6 +11,7 @@ import { loadFull } from 'tsparticles';
 import { useCallback } from 'react';
 import options from './ParticlesOptions';
 import Footer from './components/Footer';
+import CatWriter from './components/CatWriter';
 
 const App = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -29,6 +30,7 @@ const App = () => {
             <Route path='/Projects' element={<Projects />} />
           </Routes>
        </div>
+       <CatWriter/>
         <Footer/>
       </div>
     </div>
