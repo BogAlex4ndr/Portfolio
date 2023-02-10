@@ -5,7 +5,6 @@ import { BsLinkedin, BsGithub, BsFillEnvelopeFill, BsTelegram } from 'react-icon
 import CatProg from '../../assets/catLogo.png';
 import { useState } from 'react';
 import { RiMenu5Fill, RiCloseLine } from 'react-icons/ri';
-import { useEffect } from 'react';
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(window.innerWidth < 768 ? false : true);

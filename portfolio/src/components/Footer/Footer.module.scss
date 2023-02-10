@@ -2,6 +2,7 @@
 .wrapper {
   background: $BgOpacityColor;
   z-index: 50;
+  font-size: 1rem;
 }
 
 .conteiner {
@@ -31,6 +32,9 @@
     transform: scale(105%);
     
   }
+}
+.mail {
+ 
 }
 
 

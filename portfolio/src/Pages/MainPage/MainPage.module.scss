@@ -12,6 +12,7 @@
     font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
+    
     span {
       color: $firstAccentColor;
     }
@@ -70,15 +71,18 @@
     height: 100px;
     cursor: pointer;
     position: relative;
+    user-select: none;
     &:hover {
       text-shadow: 5px 5px 5px black;
     }
   }
   h4 {
+    user-select: none;
     font-size: 16px;
     font-weight: 500;
     text-shadow: 2px 2px 0px rgb(10, 0, 50);
     &:first-letter {
+      user-select: none;
       color: rgb(255, 187, 0);
     }
   }

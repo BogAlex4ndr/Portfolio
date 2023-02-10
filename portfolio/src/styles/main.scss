@@ -6,6 +6,7 @@
   h1,
   h2,
   p {
+    user-select: none;
     text-shadow: 3px 4px 2px rgb(10, 0, 50);
   }
 }

@@ -3,7 +3,6 @@ import styles from './Projects.module.scss';
 import ProjectConteiner from '../../components/ProjectConteiner';
 import axios from 'axios';
 import Skeleton from '../../components/Skeleton';
-import CatWriter from '../../components/CatWriter';
 
 const Projects = () => {
   const [items, setItems] = useState([]);

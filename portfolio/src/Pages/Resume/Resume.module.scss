@@ -13,6 +13,7 @@
   justify-content: center;
 
   img {
+    user-select: none;
     min-width: 320px;
     min-height: 100%;
     object-fit: cover;
