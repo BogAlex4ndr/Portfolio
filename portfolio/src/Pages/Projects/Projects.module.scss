@@ -48,7 +48,9 @@
   display: flex;
   justify-content: center;
   transition: transform 0.2s ease-out;
+  
   img {
+    object-fit: cover;
     padding: 20px;
     width: 200px;
     height: 300px;
