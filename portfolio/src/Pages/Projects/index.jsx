@@ -22,17 +22,16 @@ const Projects = () => {
 
   return (
     <>
-        <div className={styles.mainTitle}>
-          <h1>
-            There's my <span>Pet Projects</span>
-          </h1>
-        </div>
-        <div className={styles.wrapper}>
-          {isLoading
-            ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)
-            : items.map((obj) => <ProjectConteiner key={obj.id} {...obj} />)}
-        </div>
-    
+      <div className={styles.mainTitle}>
+        <h1>
+          <span>PROJECTS</span>
+        </h1>
+      </div>
+      <div className={styles.wrapper}>
+        {isLoading
+          ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)
+          : items.map((obj) => <ProjectConteiner key={obj.id} {...obj} />)}
+      </div>
     </>
   );
 };
